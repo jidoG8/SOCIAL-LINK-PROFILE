@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [View the source Code](https://github.com/jidoG8/SOCIAL-LINK-PROFILE.git)
+- Live Site URL: [View the live project in action](https://jidog8.github.io/SOCIAL-LINK-PROFILE/)
 
 ## My process
 
