@@ -14,7 +14,7 @@
 		box-sizing: border-box;
 	}
 
-	body {
+	main {
 		font-size: 14px;
 		font-family: var(--font-family);
 		background-color: var(--grey-900);
@@ -26,24 +26,28 @@
 		flex-direction: column;
 		margin: 0;
 		padding: 1rem;
+		width: 100%;
+		height: auto;
+		box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+		border-radius: 0.3em;
 	}
 
-	body h1 {
+	main h1 {
 		font-weight: 700;
 		margin-bottom: 0;
 	}
 
-	body p {
+	main p {
 		font-weight: 400;
 		color: var(--white);
 	}
 
-	body .location {
+	main .location {
 		color: var(--green);
 		margin-bottom: 0;
 	}
 
-	body h2 {
+	main h2 {
 		font-weight: 600;
 	}
 }
@@ -69,7 +73,7 @@
 		align-items: center;
 		background-color: var(--grey-800);
 		padding-block: 2em;
-		border-radius: 0.3em;
+		border-radius: 0.5em;
 	}
 	.pic-container {
 		width: 100px;
@@ -99,7 +103,7 @@
 		background-color: var(--grey-700);
 		font-weight: 600;
 		border: none;
-		border-radius: 0.3em;
+		border-radius: 0.5em;
 	}
 
 	button:hover {
