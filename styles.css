@@ -1,0 +1,136 @@
+/* 
+    @date: 2025/09/06
+    @FrontEnd-Mentor Challenge: Design social media link Profile 
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@layer global, theme, modules;
+
+@layer global {
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+
+	body {
+		font-size: 14px;
+		font-family: var(--font-family);
+		background-color: var(--grey-900);
+		color: white;
+		min-height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		margin: 0;
+		padding: 1rem;
+	}
+
+	body h1 {
+		font-weight: 700;
+		margin-bottom: 0;
+	}
+
+	body p {
+		font-weight: 400;
+		color: var(--white);
+	}
+
+	body .location {
+		color: var(--green);
+		margin-bottom: 0;
+	}
+
+	body h2 {
+		font-weight: 600;
+	}
+}
+
+@layer theme {
+	:root {
+		--green: hsl(75, 94%, 57%);
+		--white: hsl(0, 0%, 100%);
+		--grey-700: hsl(0, 0%, 20%);
+		--grey-800: hsl(0, 0%, 12%);
+		--grey-900: hsl(0, 0%, 8%);
+		--font-family: "Inter", sans-serif;
+	}
+}
+
+@layer modules {
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 90%;
+		max-width: 375px;
+		align-items: center;
+		background-color: var(--grey-800);
+		padding-block: 2em;
+		border-radius: 0.3em;
+	}
+	.pic-container {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		background-color: red;
+		clip-path: circle(49%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 15px;
+	}
+
+	.p-pic {
+		width: 100%;
+		height: auto;
+		object-fit: content;
+		overflow: hidden;
+	}
+
+	button {
+		width: 80%;
+		margin: 0.5em;
+		padding: 0.5em;
+		height: 45px;
+		color: white;
+		background-color: var(--grey-700);
+		font-weight: 600;
+		border: none;
+		border-radius: 0.3em;
+	}
+
+	button:hover {
+		cursor: pointer;
+		background-color: var(--green);
+		color: var(--grey-800);
+	}
+
+	.attribution {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin: 1em;
+		text-align: center;
+		font-weight: 600;
+		padding: 5px;
+		gap: 5px;
+	}
+
+	.attribution a {
+		text-decoration: none;
+		color: var(--green);
+	}
+	.attribution a:hover {
+		cursor: pointer;
+		color: red;
+	}
+
+	.logo {
+		width: 25px;
+		height: 25px;
+	}
+}
